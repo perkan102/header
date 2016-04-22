@@ -6,12 +6,13 @@
 
 class AppContext;
 
+// Size : 16
 class App : public AppPlatformListener {
 public:
-	bool _init;
-	bool _quit;
-	AppContext* context;
-
+	bool _init; // #8 0x8
+	bool _quit; // #9 0x9
+	AppContext* context; // #12 0xC
+public:
 	App(int, char**);
 	virtual ~App();
 	virtual void onLowMemory();

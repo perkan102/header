@@ -2,11 +2,12 @@
 
 class AppPlatform;
 
+// Size : 8
 class AppPlatformListener {
 public:
-	// void** vtable;
-	AppPlatform* app;
-
+	// void** vtable; #0 0x0
+	AppPlatform* app; // #4 0x4
+public:
 	AppPlatformListener();
 	AppPlatformListener(bool);
 	virtual ~AppPlatformListener();
